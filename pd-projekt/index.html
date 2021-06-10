@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Devstock Academy</title>
+
+    <style>
+        .content {
+            background-color: grey;
+        }
+        #next {
+            background-color: greenyellow;
+        }
+        #prev {
+            background-color: crimson;
+        }
+        button {
+            margin: 10px 10px 10px 10px;
+            height: 50px;
+            width: 150px;
+            border-radius: 5px;
+            
+        }
+    h1 {
+     text-align: center;
+    }
+    h3 {
+     text-align: center;
+    }
+    h4 {
+        text-align: center;
+    }
+ #nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 17%;
+            box-sizing: border-box;
+            margin: 5px;
+            background-color: honeydew;
+        }
+        
+        .card img {
+            width: 100%
+        }
+        
+        .card:hover {
+            transform:scale(1.05)
+            
+        }
+        
+        .container {
+            padding: 2px 16px;
+        }
+        
+        #lista {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+    <h1> Rick and Morty </h1>
+    <h3>Wszystkich dostępnych postaci jest <span id="ilosc"></span></h3>
+    <h4> Aktualna strona to: <span id="aktualna"></span> na <span id="wszystkie"></span></h4>
+
+    <div id="nav">
+        <button id="prev">Poprzednia</button>
+        <button id="next">Następna</button>
+        <button id='specific'>Jedna postać</button>
+
+    </div>
+    <div id="lista">
+
+    </div>
+</div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
